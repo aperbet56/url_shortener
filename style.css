@@ -1,0 +1,148 @@
+/**** Reset ****/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5e49d4;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.main__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 70%;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(153, 137, 241);
+    border: 2px dashed #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 4px 30px rgba(253, 249, 249, 0.397);
+}
+
+.container h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #4c4288;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+input:focus, textarea:focus {
+    border-color: #4c4288;
+}
+
+button {
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4c4288; 
+    color: #ffffff;
+    transform: scale(1.02);
+}
+
+textarea {
+    resize: none;
+}
+
+footer span {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/**** Responsive design ****/ 
+
+@media screen and (max-width: 768px) {
+    .main__content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header h1 {
+        line-height: 1.4;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+}

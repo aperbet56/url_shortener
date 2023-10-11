@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My url shortener</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My url shortener</h1>
+    </header>
+    <main class="main__content">
+      <section class="container">
+        <h2><i class="bx bx-link-alt"></i>Create short URL</h2>
+        <label for="originalUrl">Enter URL to shorten :</label>
+        <input type="text" id="originalUrl" placeholder="https://example.com" />
+        <button id="short__btn">Short It</button>
+        <label for="shortenedUrl">Shortened URL :</label>
+        <textarea id="shortenedUrl" rows="3" readonly></textarea>
+        <button id="reset__btn">Reset</button>
+      </section>
+    </main>
+    <footer>
+      <span>Web site created by aperbet56</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

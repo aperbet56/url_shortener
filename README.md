@@ -21,6 +21,7 @@ Lien vers le projet : https://aperbet56.github.io/url_shortener/
 - Flexbox
 - Animation CSS au focus et au survol de la souris
 - Responsive design
+- Utilisation d'un normaliseur : le fichier normalize.css
 - JavaScript
 - Code javaScript commenté
 - tiny-url-api.php (de MikeRogers0)
